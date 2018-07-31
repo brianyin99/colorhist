@@ -1,9 +1,13 @@
 # colorhist
 
+## Summary
+This repository contains functions that take images and create color histograms over CIELAB space. We use [figure-ground segmentation](https://en.wikipedia.org/wiki/Figure%E2%80%93ground_(perception)) by [Kuettal & Ferrari](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/) and previous work by [Lin et. al](http://vis.stanford.edu/papers/semantically-resonant-colors) as a framework for our project.
+
+
 ## Dependencies
 - [Figure-ground segmentation by transferring window masks](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/)
 - [MATLAB API for Python](https://www.mathworks.com/help/matlab/matlab-engine-for-python.html) - `matlab.engine` module in googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
-- [Google Images Download](https://github.com/hardikvasa/google-images-download) - We used the output folder of thumbnail images from this tool as`MY_FOLDER` in segmenter_func.m and as `MY_INPUT_FOLDER` in googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
+- [Google Images Download](https://github.com/hardikvasa/google-images-download) - We use the output folder of thumbnail images from this tool as `MY_FOLDER` in segmenter_func.m and as `MY_INPUT_FOLDER` in googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
 - [fastKDE](https://bitbucket.org/lbl-cascade/fastkde) - `fastkde.fastKDE` module in googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
 
 ## Window Segmentation Setup
@@ -14,6 +18,8 @@
    `I = imread([imgBase ‘.jpg’]); imwrite(I, [imgBase ‘.ppm’])`
    - Run maxflow_make.m (../segtrans/maxflow/maxflow_make.m)
 3. Download voc10.zip from above website, place contents into ../segtrans/data/xps
+
+## Usage
 4. Run `segmenter_func()` in segmenter_func.m (must be on same path as figureground.m)
 5. Use `NEW_FOLDER` filepath from segmenter_func.m as `SEG_FOLDER` filepath in googleimage_seg_func_v2.py
 
@@ -26,4 +32,8 @@ For object queries (ex. ‘lemonade’, ‘scissors’, ‘watch’), default to
 `TAU` -- googleimage_lin_func_v2.py uses this value for segmentation. [Lin et. al](http://vis.stanford.edu/papers/semantically-resonant-colors) use `TAU=3`, but we recommend `TAU=2`, as meaningful colors closer to white are not removed in queries such as "milkshake" or "lemonade."
 
 `DIMENSIONS` -- googleimage_lin_func_v2.py and googleimage_seg_func_v2.py use this value. Represents dimensions of bins in CIELAB space; all pixels within confines of a bin take on the same color value. Ex. setting DIMENSIONS=[5, 5, 5] will give all 125 pixels in any given CIELAB bin the same CIELAB value.
+
+## Future Work
+- compare to Lin et. al's actual methods if you can get them working
+- plot kde over original values
 
