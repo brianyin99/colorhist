@@ -2,9 +2,9 @@
 
 ## Dependencies
 - [Figure-ground segmentation by transferring window masks](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/)
-- [MATLAB API for Python](https://www.mathworks.com/help/matlab/matlab-engine-for-python.html) - `matlab.engine` module used by googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
+- [MATLAB API for Python](https://www.mathworks.com/help/matlab/matlab-engine-for-python.html) - `matlab.engine` module in googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
 - [Google Images Download](https://github.com/hardikvasa/google-images-download) - Folder of thumbnail images from using this tool should be used as `MY_INPUT_FOLDER` in googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
-- [fastKDE](https://bitbucket.org/lbl-cascade/fastkde) - `fastkde.fastKDE` module used by googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
+- [fastKDE](https://bitbucket.org/lbl-cascade/fastkde) - `fastkde.fastKDE` module in googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
 
 ## Window segmentation for googleimage_seg_func_v2.py
 1. Follow README provided [here](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/)
