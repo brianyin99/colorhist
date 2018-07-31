@@ -7,7 +7,7 @@
    - In ../segtrans/objectness/MEX/computeScoreContrast.c, change ~line 72: `mxERR…` to `mexERR…`
    - In ../segtrans/objectness/computeScores.m, change ~line 159: `I = imread([imgBase ‘.ppm’]);` to 
    `I = imread([imgBase ‘.jpg’]); imwrite(I, [imgBase ‘.ppm’])`
-   - Run maxflow_make.m (segtrans>>maxflow>>maxflow_make.m)
+   - Run maxflow_make.m (../segtrans/maxflow/maxflow_make.m)
 3. Place segmenter_func.m and figureground.m into your MATLAB folder
 4. Download voc10.zip from above website, place contents into ../segtrans/data/xps
 5. Run segmenter_func() with specified arguments
