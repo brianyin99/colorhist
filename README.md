@@ -15,8 +15,8 @@
 
 
 ## Which method to use?
-Landscape queries (ex. ‘Ocean’, ‘forest’, ‘avalanche’): use googleimage_lin_func.py (set tau=2).
-Not a big difference between t=2 and t=3 as most images won’t be segmented, but
+### Landscape queries (ex. ‘Ocean’, ‘forest’, ‘avalanche’)
+Use googleimage_lin_func.py (set tau=2). Not a big difference between t=2 and t=3 as most images won’t be segmented, but
 using googleimage_seg_func.py will lead to mostly meaningless figure-ground segmentation.
 
 Object queries (ex. ‘Lemonade’, ‘scissors’, ‘watch’): default to using window
