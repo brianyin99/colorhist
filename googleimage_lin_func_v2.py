@@ -124,15 +124,6 @@ def googleimage_lin(my_input_folder,
         b = -b_amp+bw*bin_list[2]-bw/2
         return [L, a ,b]
 
-    def uniq(lst):
-        """Take list, return generator object that yields unique elements from list."""
-        last = object()
-        for item in lst:
-            if item == last:
-                continue
-            yield item
-            last = item
-
     def grouper(ypos, xpos):
         """Group pixels using approximation of Lin et al., 2013 method. Variables unspecified in this function body are nonlocally defined."""
 
