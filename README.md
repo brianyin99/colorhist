@@ -12,10 +12,9 @@
    - In ../segtrans/objectness/computeScores.m, change ~line 159: `I = imread([imgBase ‘.ppm’]);` to 
    `I = imread([imgBase ‘.jpg’]); imwrite(I, [imgBase ‘.ppm’])`
    - Run maxflow_make.m (../segtrans/maxflow/maxflow_make.m)
-3. Place segmenter_func.m and figureground.m into your MATLAB folder
-4. Download voc10.zip from above website, place contents into ../segtrans/data/xps
-5. Run `segmenter_func()` in segmenter_func.m
-6. Use NEW_FOLDER filepath from segmenter_func.m as SEG_FOLDER filepath in googleimage_seg_func_v2.py
+3. Download voc10.zip from above website, place contents into ../segtrans/data/xps
+4. Run `segmenter_func()` in segmenter_func.m
+5. Use NEW_FOLDER filepath from segmenter_func.m as SEG_FOLDER filepath in googleimage_seg_func_v2.py
 
 ## Which method to use?
 For landscape queries (ex. ‘ocean’, ‘forest’, ‘avalanche’), use googleimage_lin_func_v2.py (set `TAU=2`). Most images won’t be segmented, but using googleimage_seg_func_v2.py can lead to mostly meaningless figure-ground segmentation.
