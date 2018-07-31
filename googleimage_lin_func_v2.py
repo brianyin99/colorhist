@@ -28,7 +28,6 @@ def googleimage_lin(my_input_folder,
 
     """Take folder MY_INPUT_FOLDER of images, create folder MY_NEW_FOLDER containing segmented images and/or 3D Histogram of pixel distribution.
         Images can be scraped from google images using https://github.com/hardikvasa/google-images-download.
-        Improves upon v1 -- after KDE, use scipy.spatial.cKDTree to find CIELAB values with corresponding RGB values.
 
     MY_INPUT_FOLDER -- Absolute filepath to the folder of images you wish to segment and/or plot
     MY_NEW_FOLDER -- Absolute filepath to the folder to where segmented images and/or plots and data will be exported
@@ -141,8 +140,8 @@ def googleimage_lin(my_input_folder,
                         num_grouped +=1
                         break # don't need to look at any other neighbors
 
-    def no_seg_bin(ypos, xpos):
-        """Bin pixels from given image without segmentation. Variables unspecified in this function body are nonlocally defined."""
+    def pos2bin(ypos, xpos):
+        """Bin pixel from given image at specified position. Variables unspecified in this function body are nonlocally defined."""
 
         Linput, ainput, binput = lab_img[ypos,xpos][0], lab_img[ypos,xpos][1], lab_img[ypos,xpos][2]
         bin = str(binner_v2(Linput, ainput, binput)) # string b/c dictionary
@@ -257,16 +256,7 @@ def googleimage_lin(my_input_folder,
                         if my_array[ypos, xpos] == 1: # ignore background pixels
                             continue
                         else:
-                            Linput, ainput, binput = lab_img[ypos,xpos][0], lab_img[ypos,xpos][1], lab_img[ypos,xpos][2]
-                            bin = str(binner_v2(Linput, ainput, binput)) # string b/c dictionary
-                            if bin in unique_bins:
-                                unique_bins[bin] += 1
-                            else:
-                                unique_bins[bin] = 1
-                            my_vals = bins2lab(binner_v2(Linput, ainput, binput))
-                            L_list.append(my_vals[0])
-                            a_list.append(my_vals[1])
-                            b_list.append(my_vals[2])
+                            pos2bin(ypos,xpos)
 
                 plt.close()
                 plt.imshow(my_array)
@@ -279,13 +269,13 @@ def googleimage_lin(my_input_folder,
             else:
                 for xpos in range(imagewidth):
                     for ypos in range(imageheight):
-                        no_seg_bin(ypos, xpos)
+                        pos2bin(ypos, xpos)
 
         # seg==False
         else:
             for xpos in range(imagewidth):
                 for ypos in range(imageheight):
-                    no_seg_bin(ypos, xpos)
+                    pos2bin(ypos, xpos)
 
     print('Out of %s total images seen, %d were skipped' % (total_images,images_skipped))
 
