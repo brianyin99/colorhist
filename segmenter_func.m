@@ -1,6 +1,7 @@
 function segmenter_func(myfolder, new_folder, segtrans_path)
 %{ 
 Take folder of images, segment using: http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/
+Use figureground.mA
 
 MYFOLDER -- Absolute filepath to folder of images to segment
 NEWFOLDER -- Name of new folder (will appear in current MATLAB folder)
