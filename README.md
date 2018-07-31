@@ -4,12 +4,12 @@
 
 1. Follow README provided [here](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/)
 2. If on macOS:
-   - In segtrans>>objectness>MEX>>computeScoreContrast.c, change ~line 72: `mxERR…` to `mexERR…`
-   - In segtrans>>objectness>>computeScores.m, change ~line 159: `I = imread([imgBase ‘.ppm’]);` to 
+   - In ../segtrans/objectness/MEX/computeScoreContrast.c, change ~line 72: `mxERR…` to `mexERR…`
+   - In ../segtrans/objectness/computeScores.m, change ~line 159: `I = imread([imgBase ‘.ppm’]);` to 
    `I = imread([imgBase ‘.jpg’]); imwrite(I, [imgBase ‘.ppm’])`
    - Run maxflow_make.m (segtrans>>maxflow>>maxflow_make.m)
 3. Place segmenter_func.m and figureground.m into your MATLAB folder
-4. Download voc10.zip from above website, place contents into segtrans>>data>>xps
+4. Download voc10.zip from above website, place contents into ../segtrans/data/xps
 5. Run segmenter_func() with specified arguments
 6. Use NEWFOLDER filepath from segmenter_func.m as SEG_FOLDER filepath in googleimage_seg_func.py
 
