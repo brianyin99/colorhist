@@ -14,7 +14,7 @@
    - Run maxflow_make.m (../segtrans/maxflow/maxflow_make.m)
 3. Place segmenter_func.m and figureground.m into your MATLAB folder
 4. Download voc10.zip from above website, place contents into ../segtrans/data/xps
-5. Run `segmenter_func()` in segmenter_func.n
+5. Run `segmenter_func()` in segmenter_func.m
 6. Use NEW_FOLDER filepath from segmenter_func.m as SEG_FOLDER filepath in googleimage_seg_func_v2.py
 
 
