@@ -1,6 +1,10 @@
 # colorhist
 
-## Get window segmentation working for googleimage_seg_func_v2.py
+## Dependencies
+- [Figure-ground segmentation by transferring window masks](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/)
+- [Google Images Download](https://github.com/hardikvasa/google-images-download)
+
+## Window segmentation for googleimage_seg_func_v2.py
 1. Follow README provided [here](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/)
 2. If on macOS:
    - In ../segtrans/objectness/MEX/computeScoreContrast.c, change ~line 72: `mxERR…` to `mexERR…`
