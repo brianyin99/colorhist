@@ -3,7 +3,11 @@
 ## Dependencies
 [Figure-ground segmentation by transferring window masks](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/)
 
+[MATLAB API for Python](https://www.mathworks.com/help/matlab/matlab-engine-for-python.html)
+
 [Google Images Download](https://github.com/hardikvasa/google-images-download)
+
+[fastKDE](https://bitbucket.org/lbl-cascade/fastkde)
 
 ## Window segmentation for googleimage_seg_func_v2.py
 1. Follow README provided [here](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/)
