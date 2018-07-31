@@ -1,6 +1,6 @@
 # colorhist
 
-## GET WINDOW SEGMENTATION WORKING FOR GOOGLEIMAGE_SEG_FUNC.PY
+## Get window segmentation working for googleimage_seg_func_v2.py
 
 1. Follow README provided [here](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/)
 2. If on macOS:
@@ -14,7 +14,7 @@
 6. Use NEWFOLDER filepath from segmenter_func.m as SEG_FOLDER filepath in googleimage_seg_func.py
 
 
-## WHICH METHOD TO USE?
+## Which method to use?
 Landscape queries (ex. ‘Ocean’, ‘forest’, ‘avalanche’): use googleimage_lin_func.py (set tau=2).
 Not a big difference between t=2 and t=3 as most images won’t be segmented, but
 using googleimage_seg_func.py will lead to mostly meaningless figure-ground segmentation.
@@ -27,7 +27,7 @@ If the background plots seem to have large amounts of salient color values (not 
 use googleimage_lin_func.py (set tau=2) to include background colors.
 
 
-## PARAMETER EXPLANATIONS
+## Parameter explanations
 TAU -- googleimage_lin_func.py uses this value for segmentation. In Lin et al., 2013,
 an image is described as having a black or white background if at least 75% of
 the border pixels of the image are within TAU of black or white, respectively.
