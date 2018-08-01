@@ -35,4 +35,4 @@ For object queries (ex. ‘lemonade’, ‘scissors’, ‘watch’), default to
 
 ## Future Work
 - Plotting KDE over values only found in original binning proccess
-- The [exact methods](https://github.com/StanfordHCI/semantic-colors) of Lin et al. seem to depend on .dll files missing from [Google CustomSearch C# Library v1.3.0](https://github.com/google/google-api-dotnet-client/releases/tag/1.3.0-beta). Getting their code working would provide valuable distribuitions to which our results could be compared.
+- The [exact methods](https://github.com/StanfordHCI/semantic-colors) of Lin et al. seem to depend on .dll files missing from [Google CustomSearch C# Library v1.3.0](https://github.com/google/google-api-dotnet-client/releases/tag/1.3.0-beta). Getting their methods working would provide valuable distribuitions to which our results could be compared.
