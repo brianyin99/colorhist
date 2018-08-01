@@ -1,6 +1,5 @@
 # Building Color Histograms
 
-## Summary
 This repository contains functions that create color histograms from input images over CIELAB space. We use [figure-ground segmentation](https://en.wikipedia.org/wiki/Figure%E2%80%93ground_(perception)) by [Kuettal & Ferrari](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/) and previous work by [Lin et al.](http://vis.stanford.edu/papers/semantically-resonant-colors) as a framework for our project.
 
 
