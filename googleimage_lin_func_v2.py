@@ -312,6 +312,8 @@ def googleimage_lin(my_input_folder,
         print("Color-density pairs with density=0 have been removed")
     my_colors_valid = []
 
+    # For LAB values outside of RGB gamut, use spatial.cKDTree to find nearest LAB values inside of RGB gamut
+    # https://stackoverflow.com/questions/10818546/finding-index-of-nearest-point-in-numpy-arrays-of-x-and-y-coordinates
     count = 0
     valid_lab_tree = spatial.cKDTree(valid_lab)
     for lab_color in s_varlist:
@@ -329,7 +331,7 @@ def googleimage_lin(my_input_folder,
 
     colors_valid, densities = [], []
 
-    #basically a linked list
+    # basically a linked list, sums repeated color-density pairs from using spatial.cKDTree above
     my_colors_valid.append("empty")
     my_densities.append("empty")
 
@@ -379,6 +381,7 @@ def googleimage_lin(my_input_folder,
 
     plt.close()
     fig, ax = plt.subplots(subplot_kw=dict(projection='3d'))
+    # resizing points
     if kde:
         ax.scatter(z, y, x, s=[foo*80000 for foo in s_c_vardensity], c=colors)
     else:
