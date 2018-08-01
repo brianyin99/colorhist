@@ -1,11 +1,11 @@
 # colorhist
 
 ## Summary
-This repository contains functions that take images and create color histograms over CIELAB space. We use [figure-ground segmentation](https://en.wikipedia.org/wiki/Figure%E2%80%93ground_(perception)) by [Kuettal & Ferrari](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/) and previous work by [Lin et. al](http://vis.stanford.edu/papers/semantically-resonant-colors) as a framework for our project.
+This repository contains functions that create color histograms from input images over CIELAB space. We use [figure-ground segmentation](https://en.wikipedia.org/wiki/Figure%E2%80%93ground_(perception)) by [Kuettal & Ferrari](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/) and [previous work](https://github.com/StanfordHCI/semantic-colors) by [Lin et. al](http://vis.stanford.edu/papers/semantically-resonant-colors) as a framework for our project.
 
 
 ## Dependencies
-- [Figure-ground segmentation by transferring window masks](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/)
+- [Figure-ground segmentation by transferring window masks](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/) - 
 - [MATLAB API for Python](https://www.mathworks.com/help/matlab/matlab-engine-for-python.html) - `matlab.engine` module in googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
 - [Google Images Download](https://github.com/hardikvasa/google-images-download) - We use the output folder of thumbnail images from this tool as `MY_FOLDER` in segmenter_func.m and as `MY_INPUT_FOLDER` in googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
 - [fastKDE](https://bitbucket.org/lbl-cascade/fastkde) - `fastkde.fastKDE` module in googleimage_lin_func_v2.py and googleimage_seg_func_v2.py
