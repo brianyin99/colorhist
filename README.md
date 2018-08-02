@@ -21,19 +21,11 @@ This repository contains functions that create color histograms from input image
 
 ## Usage
 
-<img width="511" alt="artboard 1 2x" src="https://user-images.githubusercontent.com/41968577/43601194-5be9b00a-9652-11e8-8f7d-214dd5ea1f94.png">
-
-
-
-
-
-
-
-
-## Which Method?
 For landscape queries (ex. ‘ocean’, ‘forest’, ‘avalanche’), use googleimage_lin_func_v2.py, an approximation of the Lin et al. method. Most images won’t be segmented, but using googleimage_seg_func_v2.py can lead to mostly meaningless figure-ground segmentation.
 
 For object queries (ex. ‘lemonade’, ‘scissors’, ‘watch’), default to using window segmentation (segmenter.m, googleimage_seg_func_v2.py), as it does a better job of segmenting. If the background plots seem to have large amounts of salient color values (not white/black), try using googleimage_lin_func_v2.py (`TAU=2`) to include background colors.
+
+<img width="511" alt="artboard 1 2x" src="https://user-images.githubusercontent.com/41968577/43601194-5be9b00a-9652-11e8-8f7d-214dd5ea1f94.png">
 
 ## Parameter Explanations
 `TAU` -- googleimage_lin_func_v2.py uses this value for segmentation. [Lin et al.](http://vis.stanford.edu/papers/semantically-resonant-colors) use `TAU=3`, but we recommend `TAU=2`, as meaningful colors closer to white are not removed in queries such as "milkshake" or "lemonade."
