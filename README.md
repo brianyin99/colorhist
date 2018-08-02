@@ -30,7 +30,7 @@ For object queries (ex. ‘lemonade’, ‘scissors’, ‘watch’), default to
 ## Parameter Explanations
 `TAU` -- googleimage_lin_func_v2.py uses this value for segmentation. [Lin et al.](http://vis.stanford.edu/papers/semantically-resonant-colors) use `TAU=3`, but we recommend `TAU=2`, as meaningful colors closer to white are not removed in queries such as "milkshake" or "lemonade."
 
-`DIMENSIONS` -- googleimage_lin_func_v2.py and googleimage_seg_func_v2.py use this value. Represents dimensions of bins in CIELAB space; all pixels within confines of a bin take on the same color value. Ex. setting DIMENSIONS=[5, 5, 5] will give all 125 pixels in any given CIELAB bin the same CIELAB value.
+`DIMENSIONS` -- googleimage_lin_func_v2.py and googleimage_seg_func_v2.py use this value. Represents dimensions of bins in CIELAB space; all pixels within confines of a bin take on the same color value. Ex. setting `DIMENSIONS=[5, 5, 5]` will give all 125 pixels in any given CIELAB bin the same CIELAB value.
 
 ## Future Work
 - Plotting KDE over values only found in original binning proccess could be faster than using `spatial.cKDTree` on valid_lab.pkl. Helpful links: [1](https://stackoverflow.com/questions/40756024/python-fastkde-beyond-limits-of-data-points), [2](https://stackoverflow.com/questions/10818546/finding-index-of-nearest-point-in-numpy-arrays-of-x-and-y-coordinates)
