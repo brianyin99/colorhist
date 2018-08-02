@@ -21,6 +21,9 @@ This repository contains functions that create color histograms from input image
 
 ## Usage
 
+<img width="501" alt="colorhistflow" src="https://user-images.githubusercontent.com/41968577/43599882-95960e10-964e-11e8-92a2-9d7a79641774.png">
+
+
 
 ## Which Method?
 For landscape queries (ex. ‘ocean’, ‘forest’, ‘avalanche’), use googleimage_lin_func_v2.py (set `TAU=2`). Most images won’t be segmented, but using googleimage_seg_func_v2.py can lead to mostly meaningless figure-ground segmentation.
