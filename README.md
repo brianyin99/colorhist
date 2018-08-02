@@ -20,8 +20,10 @@ This repository contains functions that create color histograms from input image
 3. Download voc10.zip from above website, place contents into ../segtrans/data/xps
 
 ## Usage
+<table><tr><td>
+    <img width="511" alt="artboard 1 2x" src="https://user-images.githubusercontent.com/41968577/43600196-9185e66e-964f-11e8-9ad1-d22b87c15253.png">
+</td></tr></table>
 
-<img width="511" alt="artboard 1 2x" src="https://user-images.githubusercontent.com/41968577/43600051-265069d2-964f-11e8-9be6-e3a8c022358c.png">
 
 
 
