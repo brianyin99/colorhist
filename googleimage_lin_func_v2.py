@@ -261,7 +261,7 @@ def googleimage_lin(my_input_folder,
                 plt.close()
                 plt.imshow(my_array)
                 try:
-                    plt.savefig(my_new_folder + '/' + my_image + '.svg', format='svg')
+                    plt.savefig(my_new_folder + '/' + my_image + '.png', format='png', bbox_inches='tight')
                 except ValueError as error:
                     print(my_image + ' was processed but not saved')
 
