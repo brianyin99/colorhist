@@ -1,5 +1,6 @@
 function [prediction] = figureground(rgbimage, segtrans_path)
-% Take image (imageheightximagewidthxRGB), return image segmented
+%{ Take image (imageheightximagewidthxRGB), return image segmented. Must be on same path as segmenter_func.m 
+%}
 
 addpath(genpath(segtrans_path)) % path to segtrans folder (must be run from segtrans)
 
