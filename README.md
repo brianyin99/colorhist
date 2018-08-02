@@ -31,7 +31,7 @@ This repository contains functions that create color histograms from input image
 
 
 ## Which Method?
-For landscape queries (ex. ‘ocean’, ‘forest’, ‘avalanche’), use googleimage_lin_func_v2.py (set `TAU=2`). Most images won’t be segmented, but using googleimage_seg_func_v2.py can lead to mostly meaningless figure-ground segmentation.
+For landscape queries (ex. ‘ocean’, ‘forest’, ‘avalanche’), use googleimage_lin_func_v2.py, an approximation of the Lin et al. method. Most images won’t be segmented, but using googleimage_seg_func_v2.py can lead to mostly meaningless figure-ground segmentation.
 
 For object queries (ex. ‘lemonade’, ‘scissors’, ‘watch’), default to using window segmentation (segmenter.m, googleimage_seg_func_v2.py), as it does a better job of segmenting. If the background plots seem to have large amounts of salient color values (not white/black), try using googleimage_lin_func_v2.py (`TAU=2`) to include background colors.
 
