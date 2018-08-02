@@ -35,3 +35,11 @@ For object queries (ex. ‘lemonade’, ‘scissors’, ‘watch’), default to
 ## Future Work
 - Plotting KDE over values only found in original binning proccess could be faster than using `spatial.cKDTree` on valid_lab.pkl. Helpful links: [1](https://stackoverflow.com/questions/40756024/python-fastkde-beyond-limits-of-data-points), [2](https://stackoverflow.com/questions/10818546/finding-index-of-nearest-point-in-numpy-arrays-of-x-and-y-coordinates)
 - The [exact methods](https://github.com/StanfordHCI/semantic-colors) of Lin et al. seem to depend on .dll files missing from [Google CustomSearch C# Library v1.3.0](https://github.com/google/google-api-dotnet-client/releases/tag/1.3.0-beta). Getting their methods working would provide valuable distribuitions to which our results could be compared.
+
+## Extras
+
+#### Example results
+![artboard 1 1 5x](https://user-images.githubusercontent.com/41968577/43612803-0051b348-9673-11e8-9db9-bf8040cb1e4e.png)
+
+#### Segmentation comparisons
+![artboard 1](https://user-images.githubusercontent.com/41968577/43612950-7251eca6-9673-11e8-8ee9-afcd9b8ece57.png)
