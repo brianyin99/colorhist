@@ -21,7 +21,7 @@ This repository contains functions that create color histograms from input image
 
 ## Usage
 
-<img width="511" alt="artboard 1 2x" src="https://user-images.githubusercontent.com/41968577/43601034-e25b555e-9651-11e8-9e78-2ff2f964b223.png">
+<img width="511" alt="artboard 1 2x" src="https://user-images.githubusercontent.com/41968577/43601194-5be9b00a-9652-11e8-8f7d-214dd5ea1f94.png">
 
 
 
