@@ -21,9 +21,10 @@ This repository contains functions that create color histograms from input image
 
 ## Usage
 
-<kbd>
-   <img width="511" alt="artboard 1 2x" src="https://user-images.githubusercontent.com/41968577/43600451-39fe2a0e-9650-11e8-87ad-92713f4d7cbd.png">
-</kbd>
+<img width="511" alt="flowchart" src="https://user-images.githubusercontent.com/41968577/43600867-6bb9eef6-9651-11e8-962f-2916abee1f46.png">
+
+
+
 
 
 
