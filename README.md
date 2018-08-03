@@ -36,6 +36,10 @@ This repository contains functions that create color histograms from input image
 - Plotting KDE over values only found in original binning proccess could be faster than using `spatial.cKDTree` on valid_lab.pkl. Helpful links: [1](https://stackoverflow.com/questions/40756024/python-fastkde-beyond-limits-of-data-points), [2](https://stackoverflow.com/questions/10818546/finding-index-of-nearest-point-in-numpy-arrays-of-x-and-y-coordinates)
 - The [exact methods](https://github.com/StanfordHCI/semantic-colors) of Lin et al. seem to depend on .dll files missing from [Google CustomSearch C# Library v1.3.0](https://github.com/google/google-api-dotnet-client/releases/tag/1.3.0-beta). Getting their methods working would provide valuable distribuitions to which our results could be compared.
 
+## Acknowledgments
+
+Special thanks to Karen Schloss and Laurent Lessard at University of Wisconsin - Madison!
+
 ## Extras
 
 #### Example results
