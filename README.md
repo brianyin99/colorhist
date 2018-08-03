@@ -38,7 +38,7 @@ This repository contains functions that create color histograms from input image
 
 ## Acknowledgments
 
-Special thanks to Karen Schloss and Laurent Lessard at University of Wisconsin - Madison!
+Special thanks to Karen Schloss and Laurent Lessard at University of Wisconsin - Madison
 
 ## Extras
 
