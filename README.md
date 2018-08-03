@@ -42,4 +42,4 @@ This repository contains functions that create color histograms from input image
 ![artboard 1 1 5x](https://user-images.githubusercontent.com/41968577/43612803-0051b348-9673-11e8-9db9-bf8040cb1e4e.png)
 
 #### Segmentation comparisons
-![artboard 1](https://user-images.githubusercontent.com/41968577/43613516-497bfd88-9675-11e8-9714-91462b8c0069.png)
+![artboard 1](https://user-images.githubusercontent.com/41968577/43655670-3873c502-9715-11e8-8721-9605c6bd4819.png)
