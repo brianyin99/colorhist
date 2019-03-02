@@ -1,7 +1,7 @@
 # Building Color Histograms
 
 ## Background
-Color-concept assignment is the process by which we build associations between concepts (things and ideas, e.g. "banana", "freedom", "car"), and colors. In order to estimate the strengths of the connections between a certain color and concept to serve as a baseline for future experiments, we decided to analyze the frequencies of colors from images scraped from Google queries of our concepts (scroll to the bottom for examples).
+Color-concept assignment is the process by which people build associations between concepts (things and ideas, e.g. "banana", "freedom", "car"), and colors. In order to estimate the strengths of the connections between concepts and colors to serve as a baseline for future experiments, we analyze the frequencies of colors from images scraped from Google queries of concepts (scroll to the bottom for examples).
 
 This repository contains functions that create color histograms from input images over CIELAB space. We use [figure-ground segmentation](https://en.wikipedia.org/wiki/Figure%E2%80%93ground_(perception)) by [Kuettal & Ferrari](http://calvin.inf.ed.ac.uk/software/figure-ground-segmentation-by-transferring-window-masks/) and previous work by [Lin et al.](http://vis.stanford.edu/papers/semantically-resonant-colors) as a framework for our project.
 
